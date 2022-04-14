@@ -511,7 +511,7 @@ text-decoration: none;
 }
 
 .accordion-button::after{
-    background-image: url('Assets/Plus.svg');
+    background-image: url('../Assets/Plus.svg');
     font-size: 12px;
     background-size: 0.9rem;;
 }
