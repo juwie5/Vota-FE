@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/signup.css">
+</head>
+<body>
+    <section class="sect">
+        <div class="imgs">
+            <img src="Assets/Vota_Logo_.png" alt="votalogo">
+            <img class="signimg" src="Assets/signimg.svg" alt="">
+        </div>
+        <div class="frm-sect">
+            <form class="frm">
+                <h2>Welcome to VOTA</h2>
+                <p>Please sign-up to create your account</p>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Admin@chamsmobile.com" required>
+                <div class="frm eyecont">
+                 <label for="password">Password</label>
+                 <img src="Assets/eyes.svg" alt="" id="eyeimg">
+                 <input type="password" name="password" placeholder=".........." required>
+                </div>
+                <div class="frm eyecont">
+                    <label for="confirmpassword">Confirm Password</label>
+                    <img src="Assets/eyes.svg" alt="" id="eyeimg">
+                    <input type="password" name="confirmpassword" placeholder=".........." required>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="terms" required>
+                    <p>I agree to <a class="terms" href="#">terms</a> and <a class="terms" href="#">conditions</a></p>
+                </div>
+                <button class="btn-sign">Sign up</button>
+                <p>Already have an account ?  <a  class="sign" href="login.html">Sign in</a></p>
+            </form>  
+        </div>
+    </section>
+</body>
+</html>   
