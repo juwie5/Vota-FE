@@ -41,15 +41,25 @@ body{
     list-style: none;
 }
 
+.links-a{
+    text-decoration: none;
+    color: #636363;
+
+}
+
+.links-a:hover{
+    color: #000000;
+}
+
 li {
     margin-right: 50px;
     cursor: pointer;
     font-size: 20px;
     font-style: normal;
     line-height: 24px;
-    font-weight: 500;
-    
+    font-weight: 500;    
 } 
+
  li:hover{
 font-weight: 700;
 }
@@ -61,24 +71,24 @@ padding: 7px 35px;
 text-decoration: none;
 
 }
-.log-btn{
+.nav-btn{
     border: 1px solid #0F7039; 
     margin-right: 10px;
     color: #0F7039;
 }
 
-.log-btn:hover{
+.nav-btn:hover{
  background-color: #000;
  color: #fff;
  border: 1px solid #000;
 }
 
-.create-btn {
+.nav-create-btn {
     background-color: #049A38;
     color:  #fff;
 }
 
-.create-btn:hover{
+.nav-create-btn:hover{
     background-color: #04b341;
     color: #fff;
 }
@@ -89,11 +99,13 @@ text-decoration: none;
     margin: 0 0 73px;
     padding:40px 0 50px;
     width: 100%;
-    margin: 100px 0 50px 0;
-    background: linear-gradient(153.6deg, rgba(0, 170, 55, 0.4) 22.26%, rgba(123, 214, 60, 0.245417) 52.2%, rgba(224, 250, 63, 0.12) 83.42%);
-    /* filter: blur(5px); */
-    padding-left: 2%; 
-    
+    margin: 100px 0 50px 0;    
+}
+.hero-bg{
+    background-image: url("../Assets/Hero_Header BG.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero h1{
@@ -161,7 +173,7 @@ text-decoration: none;
 .bod-why{
     display: flex;
     align-items: center;
-    margin-bottom: 157px;
+    margin-bottom: 150px;
     justify-content: space-around;
 }
 .why{
@@ -214,7 +226,8 @@ text-decoration: none;
     width: 317px;
     height: 286px;
     padding: 24px 27px;
-    border-bottom:  1px solid  rgba(29, 42, 68, 0.12);
+    background-color: #F9F9F9;
+    border-radius: 12px;
 }
 
 .cards h4{
@@ -236,7 +249,7 @@ text-decoration: none;
  
 .dets{
     display: flex;
-    margin-bottom: 120px;
+    margin: 120px 0 120px 0;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -422,6 +435,7 @@ text-decoration: none;
 .test-card{
     width: 444px;
     height: 322.25px;
+    position: relative;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.2);
@@ -438,6 +452,16 @@ text-decoration: none;
     color: #000000;
     margin: 20px 0;
 }
+.sub-test{
+    width: 100%;
+    background-color: #FAFBFF;
+    box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 0 10px 10px; 
+}
 
 .sub-test img{
     float: left;
@@ -453,11 +477,21 @@ text-decoration: none;
     font-size: 20px;
     margin: 0;
 }
-
+/* Faqs Section */
+.faq{
+    margin-bottom: 150px;
+}
 
 .faq-set{
     display: flex;
     justify-content: space-evenly;
+}
+.faq-set-side{
+    background-color: #FEFEFE;
+    border-radius: 15px;
+    height: 300px;
+    width: 367px;
+    padding: 10px;
 }
 
 .faq-head{
@@ -516,10 +550,19 @@ text-decoration: none;
     background-size: 0.9rem;;
 }
 
+
+/* Footer section */
+footer{
+    
+    box-shadow: 0px -5px 2px rgba(238, 238, 238, 0.85);
+}
+
 .foot{
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    cursor: pointer;
+   padding-top: 50px;
+
 }
 
 .ft-log{
@@ -555,12 +598,19 @@ text-decoration: none;
     color: #000000;
 }
 
+.ft-links a{
+    text-decoration: none;
+    color:  #000000;
+
+}
+
 .ft-img{
     margin-bottom: 10px;
 }
 
 .ft-end{
     margin-top: 50px;
+   
 }
 
 .ft-end p {
@@ -570,7 +620,6 @@ text-decoration: none;
     font-size: 16px;
     line-height: 23px;
     text-align: center;
-    color: #A4A4A4;
 }
 
 .ft-end hr{
